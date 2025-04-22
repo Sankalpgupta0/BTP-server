@@ -14,7 +14,6 @@ CORS(app)  # Enable CORS for all domains
 model = ChatGoogleGenerativeAI(
     model="gemini-1.5-flash",
     temperature=0,
-    max_completion_tokens=100,
 )
 
 @app.route('/', methods=['GET'])
